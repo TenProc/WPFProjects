@@ -1,12 +1,13 @@
-﻿<Window x:Class="LearningWPF.MainWindow"
+﻿<Window x:Class="Developtive.ListBoxApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:LearningWPF"
+        xmlns:local="clr-namespace:Developtive.ListBoxApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" SnapsToDevicePixels="True"
+        SizeToContent="WidthAndHeight">
     <Grid>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="215,167,0,0" VerticalAlignment="Top" Width="75"/>
+        <ListBox Style="{DynamicResource LBX_HORIZONTAL}" ItemsSource="{Binding Datas}"/>
     </Grid>
 </Window>
